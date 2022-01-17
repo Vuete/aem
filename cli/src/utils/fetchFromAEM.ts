@@ -11,7 +11,7 @@ export const fetchFromAEM = async config => {
   const response = await fetch(url, {
     method: config.method,
     headers: {
-      Authorization: `Basic ${base64.encode(`admin:admin`)}`,
+      Authorization: `Basic ${base64.encode(`admin:authoradmin`)}`,
     },
     body: config.body || null,
   }).catch(error => log(errorMessage, error));
